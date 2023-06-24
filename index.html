@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOTHEOSE 2023</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="resultat.css">
+</head>
+<body>
+    <head>
+        <div class="header">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo" width="100px">
+            </div>
+            <div class="apotheose">
+                <div class="APOTHEOSE_1">
+                    APOTHEOSE 2023
+                </div>
+                <div class="acefamily_1">
+                    Ace Family 
+                </div>
+            </div>
+        </div>
+    </head>
+    <h1>Felicitation</h1>
+        <p>Vous avez voté
+            <script>
+                var table = [
+    { nom: "Akpa", filiere: "SRIT2B", votes: 0 },
+    { nom: "Kokon", filiere: "SRIT2B", votes: 0 },
+    { nom: "marc", filiere: "vre", votes: 0 }
+  ];
+  function voter(numCand) {
+    var candidat = table[numCand];
+    var nom = candidat.nom;
+    var filiere = candidat.filiere;
+    var nomCandidat = document.getElementsByClassName("nom_candidat")[numCand].innerHTML;
+    var filiereCandidat = document.getElementsByClassName("filiere_candidat")[numCand].innerHTML;
+    document.getElementById("confirmer").style.display = "flex";
+    // Incrémenter le nombre de votes du candidat sélectionné
+    candidat.votes++;
+    document.getElementById('nom').value = nom;
+    document.getElementById('filiere').value = filiere;
+    document.getElementById("confirmer").classList.remove("disabled-button");
+
+    
+
+    // Afficher un message de confirmation
+
+    document.getElementById("nom").value = nomCandidat;
+    document.getElementById("filiere").value = filiereCandidat;
+
+
+    document.getElementById('add').textContent = "bonjour";
+  }
+            </script>
+            <span id="add"></span>
+        </p>
+
+</body>
+</html>

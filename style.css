@@ -1,0 +1,77 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+
+}
+span{
+    color: #0f6017;
+}
+img{
+    border-radius: 5px;
+}
+.candidat{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    border: 1px black solid;
+    margin: 0 40px;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+.nom_candidat{
+    font-size: 30px;
+    font-family:'poppins';
+    font-weight: 300;
+}
+.filiere_candidat{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.voter{
+    background-color: #0f6017;
+    font-size: 30px;
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+.voter:hover{
+    background-color: rgb(6, 98, 134);
+}
+.cacher{
+    background-color: white ;
+    color: red;
+}
+button{
+    background-color: #c8dd0e;
+    padding: 10px 25px;
+    font-size: 25px;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.letter{
+    color: black;
+    border-top: 4px #0f6017 solid;
+    border-radius: 30%;
+}
+.letters{
+    color: black;
+    border-bottom: 4px #0f6017 solid;
+    border-radius: 30%;
+}

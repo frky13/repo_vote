@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+form{
+  font-family: "Poppins",sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-left: 10%;
+  margin-top: 120px;
+}
+.div_formulaire{
+  position: relative;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form_input{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  font-size: 20px;
+  border: 1px #ccc solid;
+  border-radius: 0.5rem;
+  outline: none;
+  background: none;
+  z-index: 1;
+  padding: 10px 15px;
+}
+.form_label{
+  position: relative;
+  padding: 0 5px;
+  background-color: #fff;
+  color: #00442f;
+  z-index: 2;
+  pointer-events: none;
+}
+h1{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.submit{
+  display: block;
+    padding: 0.72rem 2rem;
+    width: 80%;
+    outline: 0;
+    background-color: #00442f;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form_input:focus + .form_label{
+  top: -.5rem;
+  left: 0.8rem;
+  color: #00442f;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label{
+  top: -.5rem;
+  left: 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 10;
+}
+.form_input:focus{
+  border: 1px #00442f solid;
+}
+
+#error-message {
+  margin-top: 40px;
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+#telephone-error, #mdp-error{
+  color: blue;
+  font-size: 20px;
+}
+.retour{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(168, 216, 255);
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 10px;
+}
+.retour:active{
+  background-color: rgb(62, 130, 185);
+}
+a{
+  text-decoration: none;
+}
