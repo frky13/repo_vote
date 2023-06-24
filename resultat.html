@@ -26,15 +26,9 @@
     </head>
     <h1>Felicitaions</h1>
         <p class="message">Vous avez voté
-            <span>
-                <?php
-                    session_start();
-                    $nom = $_SESSION["nom"];
-                    echo $nom;
-                ?>
-            </span>
+         
         </p>
-        <p class="quitter">Veuiller quitter la page manuellement</p>
+        <p class="quitter">Vous pouvez quitter la page</p>
         <script>
     // Empêcher la navigation arrière depuis la page de résultat
     history.pushState(null, null, location.href);
