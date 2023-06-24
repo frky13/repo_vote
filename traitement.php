@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Enregistrer le nom du candidat dans la session
         $_SESSION["nom"] = $nom;
         $_SESSION["vote"] = 1; // Mettre à jour la valeur de vote dans la session
-        header("Location: resultat.php");
+        header("Location: resultat.html");
         exit();
     } else {
         echo "Erreur lors de l'enregistrement du vote: " . $conn->error;
